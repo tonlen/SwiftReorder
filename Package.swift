@@ -4,11 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftReorder",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v10)],
     products: [
         .library(name: "SwiftReorder", targets: ["SwiftReorder"])
     ],
     targets: [
         .target(name: "SwiftReorder", path: "Source")
+    ],
+    swiftLanguageVersions: [
+        .v5
     ]
 )
